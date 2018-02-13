@@ -1,0 +1,91 @@
+/*///////////////////
+//	   HEADLINE    //
+///////////////////*/
+
+#headline {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#headline>h4 {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+#headline>h6 {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+
+/*///////////////////
+//	  PROJECTS     //
+///////////////////*/
+
+#project-blocks>div {
+    min-height: 250px;
+}
+
+#watson-block, #smc-block {
+    min-height: 175px !important;
+}
+
+@media screen and (min-width: 640px) {
+    #project-blocks>div:hover {
+        transition: 0.5s;
+        transform: scale(1.02);
+        z-index: 100;
+    }
+    #project-blocks>div {
+        transition: 0.5s;
+        min-height: 250px;
+        cursor: pointer;
+        z-index: 0;
+    }
+    #watson-block, #smc-block {
+        min-height: 250px !important;
+    }
+}
+
+#volo-block {
+    background-color: #DEDEDE;
+}
+
+#cilentree-block {
+    background-color: #B2B2B2;
+}
+
+#uber-block {
+    background-color: #DEDEDE;
+}
+
+#watson-block, #smc-block {
+    background-color: #F4F4F4;
+}
+
+#budgie-block {
+    transition: 1s;
+    background-color: #736F72;
+}
+
+
+/*///////////////////
+//	   IMAGES     //
+///////////////////*/
+
+#project-blocks img {
+    max-height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+#uber-block img {
+    max-height: 125px !important;
+    margin-top: 60px !important;
+}
+
+#watson-block img, #smc-block img {
+    max-height: 350px !important;
+}

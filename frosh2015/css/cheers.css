@@ -1,0 +1,50 @@
+.top{padding-top: 50px;
+    padding-bottom: 25px}
+
+.dark-bg{
+    background-image: url(../img/paper-texture.jpg);
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.light-bg{
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+h1 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}
+
+p, a {
+    font-size: 18px;
+    color: #444;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+    width: auto;
+    height: 100%;
+    background-image: url(../img/paper-texture-white.jpg);
+}
+
+@media(min-width:767px) {
+    .contact-info{
+        margin-top: 125px;
+    }    
+}
+
+.nav-brand-text{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    margin-top: 0px;
+    color: #777;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+    font-size: 14px
+}

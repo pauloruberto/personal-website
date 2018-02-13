@@ -1,0 +1,62 @@
+body {
+    background-color: #FFFFFF;
+}
+
+h4, h3 {
+    color: #FF6961;
+    font-family: 'Kadwa', serif !important;
+    font-weight: 700;
+}
+
+#nav {
+    border-bottom: 0px !important;
+}
+
+#about-heading {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+}
+
+#about-heading>h4 {
+    font-size: 40px;
+}
+
+#about-heading>h3 {
+    font-size: 60px;
+}
+
+@media screen and (min-width: 640px) {
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.about-card {
+    padding-bottom: 25px;
+}
+
+.about-card>h6, p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.about-card>p {
+    font-size: 14px;
+}
+
+.about-card>h6 {
+    font-weight: bold;
+}
+
+#acomplishments-card>.button {
+    margin-top: 25px;
+}
+
+#acomplishments-card>img {
+    max-height: 100px;
+    max-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
