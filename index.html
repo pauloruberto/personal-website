@@ -1,91 +1,105 @@
 <!doctype html>
 <html>
+   <head>
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Paulo Ruberto</title>
+      <!-- Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117502504-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
 
-<head>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paulo Ruberto</title>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117502504-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-117502504-1');
-    </script>
-    <!-- Foundation -->
-    <link rel="stylesheet" href="css/foundation.css">
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Kadwa:700" rel="stylesheet">
-    <!-- Personal CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
-</head>
-
-<body>
-    <nav id='nav'>
-        <img id='hamburger-button' src='images/hamburger.svg' alt='navigation hamburger'>
-        <a id='nav-brand' href='index.html'>PAULO RUBERTO</a>
-        <div id='nav-links'>
+         function gtag() {
+           dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+         gtag('config', 'UA-117502504-1');
+      </script>
+      <!-- Foundation -->
+      <link rel="stylesheet" href="css/foundation.css">
+      <!-- Fonts -->
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.googleapis.com/css?family=Kadwa:700" rel="stylesheet">
+      <!-- Personal CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/index.css">
+   </head>
+   <body>
+      <nav id='nav'>
+         <img id='hamburger-button' src='images/hamburger.svg' alt='navigation hamburger'>
+         <a id='nav-brand' href='index.html'>PAULO RUBERTO</a>
+         <div id='nav-links'>
             <a id='link1' class='nav-link' href='mailto:paulo.ruberto@mail.utoronto.ca?Subject=Hey%20Paulo!'>CONTACT</a>
             <a id='link2' class='nav-link' href='about.html'>ABOUT</a>
-        </div>
-    </nav>
-
-
-    <div id='headline' class='row'>
-        <h4 class='small-12 collumn'>Computer Scientist & Software Engineer, based in Toronto</h4>
-    </div>
-
-    <div id='project-blocks' class='row'>
-
-        <div id='cilentree-block' class='small-12 medium-4 column'>
+         </div>
+      </nav>
+      <div id='headline' class='row'>
+         <h4 class='small-12 collumn'>Computer Scientist & Software Engineer, based in Toronto</h4>
+      </div>
+      <div id='project-blocks' class='row'>
+         <div id='cilentree-block' class='small-12 medium-4 column'>
             <a href='cilentree.html'>
-                <img src='/images/cilentree.png' alt='cilentree preview' />
+               <img src='/images/cilentree.png' alt='cilentree preview' />
+               <div class='hover-info-dark'>
+                  <h2>Cilentreé</h2>
+                  <p>mobile prototyping</p>
+               </div>
             </a>
-        </div>
-        <div id='tank-block' class='small-12 medium-8 column'>
+         </div>
+         <div id='tank-block' class='small-12 medium-8 column'>
             <a href='tankutility.html'>
-                <img id='tank-logo' src='/images/tank-utility.png' alt='tank utility logo' />
+               <img id='tank-logo' src='/images/tank-utility.png' alt='tank utility logo' />
+               <div class='hover-info-light'>
+                  <h2>homebridge-tank-utility</h2>
+                  <p>plugin development</p>
+               </div>
             </a>
-        </div>
-        <div id='watson-block' class='small-12 column'>
+         </div>
+         <div id='watson-block' class='small-12 column'>
             <img id='watson-preview' src='/images/ibm.png' alt='ibm watson preview' />
-        </div>
-        <div id='uber-block' class='small-12 medium-6 column'>
+         </div>
+         <div id='uber-block' class='small-12 medium-6 column'>
             <a href='https://github.com/pauloruberto/simple-itunes.widget'>
-                <img src='/images/uber-logo.png' alt='uber preview' />
+              <img src='/images/uber-logo.png' alt='uber preview' />
+              <div class='hover-info-dark'>
+                 <h2>iTunes Widget for Ubersicht</h2>
+                 <p>widget development</p>
+              </div>
             </a>
-        </div>
-        <div id='volo-block' class='small-12 medium-6 column'>
+         </div>
+         <div id='volo-block' class='small-12 medium-6 column'>
             <a href='volo.html'>
-                <img src='/images/volo.png' alt='volo preview' />
+               <img src='/images/volo.png' alt='volo preview' />
+               <div class='hover-info-light'>
+                  <h2>Volo8</h2>
+                  <p>interface design</p>
+               </div>
             </a>
-        </div>
-        <div id='smc-block' class='small-12 column'>
+         </div>
+         <div id='smc-block' class='small-12 column'>
             <a href='smc.html'>
-                <img id='smc-preview' src='/images/smc.png' alt='smc preview' />
+            <img id='smc-preview' src='/images/smc.png' alt='smc preview' />
             </a>
-        </div>
-    </div>
-
-    <footer>
-        <div id='footer-links'>
+            <div class='hover-info-dark'>
+               <h2>SMC Orientation Website</h2>
+               <p>website development</p>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div id='footer-links'>
             <a href='https://linkedin.com/in/pauloruberto'>LinkedIn</a>
             <a href='https://github.com/pauloruberto'>GitHub</a>
             <a href='https://instagram.com/pauloruberto/'>Instagram</a>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/functions.js"></script>
-    <script src="js/projects.js"></script>
-</body>
-
+         </div>
+      </footer>
+      <!-- Scripts -->
+      <script src="js/vendor/jquery.js"></script>
+      <script src="js/vendor/what-input.js"></script>
+      <script src="js/vendor/foundation.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/functions.js"></script>
+      <script src="js/projects.js"></script>
+   </body>
 </html>
