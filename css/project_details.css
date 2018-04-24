@@ -1,41 +1,41 @@
 #preview-image img {
-    max-height: 500px;
-    padding-top: 70px;
-    padding-bottom: 25px;
-    display: block;
-    margin: 0 auto;
+  max-height: 500px;
+  padding-top: 70px;
+  padding-bottom: 25px;
+  display: block;
+  margin: 0 auto;
 }
 
 #project-name, #project-description, #tool-list {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 #project-name h6 {
-    font-family: 'Kadwa', serif !important;
-    font-weight: 700;
-    font-size: 3em;
+  font-family: 'Kadwa', serif !important;
+  font-weight: 700;
+  font-size: 3em;
 }
 
 #project-description h6 {
-    color: #FF6961;
-    font-weight: 700;
-    margin-top: -15px;
-    padding-bottom: 25px;
+  color: #FF6961;
+  font-weight: 700;
+  margin-top: -15px;
+  padding-bottom: 25px;
 }
 
 .project-card {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .project-card>h6, p {
-    padding-left: 10px;
-    padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .project-card>p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .project-card>h6 {
-    font-weight: bold;
+  font-weight: bold;
 }

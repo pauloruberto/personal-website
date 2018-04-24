@@ -1,15 +1,15 @@
-#content{
+#content {
   padding-top: 50px;
   padding-bottom: 100px;
   padding-right: 0px;
 }
 
-#photo-block{
-    position: relative;
-    min-height: 600px;
+#photo-block {
+  position: relative;
+  min-height: 600px;
 }
 
-#headshot{
+#headshot {
   display: block;
   max-height: 600px;
   position: absolute;
@@ -36,37 +36,35 @@
   #about-tag {
     padding-top: 0px;
   }
-
-  #content{
+  #content {
     padding-right: 50px;
   }
-
-  footer{
+  footer {
     position: absolute;
     bottom: 0;
   }
 }
 
-#connect-links{
+#connect-links {
   padding-top: 50px;
 }
 
-#contact-links{
+#contact-links {
   padding-top: 50px;
 }
 
-.about-sub-title{
+.about-sub-title {
   width: 100%;
   font-size: 1em;
 }
 
-.about-link{
+.about-link {
   text-decoration: underline;
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: 600;
 }
 
-.about-link{
+.about-link {
   text-decoration: underline;
 }
