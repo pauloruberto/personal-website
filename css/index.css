@@ -97,13 +97,13 @@
 }
 
 #amazon-block{
-  background-color: #FAFAFA;
-  border-top: 1px solid #ECEFF1;
+  background-color: rgba(250,250,250,1);
+  border-top: 1px solid rgb(236,239,241);
 }
 
 #ibm-block {
-  background-color: #ECEFF1;
-  border-top: 1px solid #ECEFF1;
+  background-color: rgba(236,239,241,1);
+  border-top: 1px solid rgba(236,239,241,1);
 }
 
 #cilentree-block {
@@ -128,6 +128,14 @@
 .hover-info:hover {
   opacity: 1;
   transition: 0.35s;
+}
+
+#ibm-block .hover-info:hover {
+  background-color: rgba(236,239,241,0.5);
+}
+
+#amazon-block .hover-info:hover {
+  background-color: rgba(250,250,250,0.5);
 }
 
 #volo-block .hover-info:hover {
