@@ -1,6 +1,18 @@
 // track if burger is open or not
 var hamburger_open = 0;
 
+
+$( document ).ready(function() {
+    var page = window.location.pathname;
+
+    // set the nav bar to display current page
+    if(page == '/about' || page == '/about.html'){
+      $("#link1").css('opacity', '0.25');
+    } else if(page == '/' || page == '/index.html' || page == '/index'){
+      $("#link3").css('opacity', '0.25');
+    }
+});
+
 // when the hamburger is clicked
 $("#hamburger-button").click(function() {
     var headline_height = $("#headline").outerHeight();
