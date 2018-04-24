@@ -1,25 +1,4 @@
 /*///////////////////
-//	   HEADLINE    //
-///////////////////*/
-
-#headline {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-
-#headline>h4 {
-  margin: 0 auto;
-  text-align: center;
-  width: 80%;
-}
-
-#headline>h6 {
-  margin: 0 auto;
-  text-align: center;
-  width: 80%;
-}
-
-/*///////////////////
 //	    INTRO      //
 ///////////////////*/
 
@@ -119,10 +98,12 @@
 
 #amazon-block{
   background-color: #FAFAFA;
+  border-top: 1px solid #ECEFF1;
 }
 
 #ibm-block {
   background-color: #ECEFF1;
+  border-top: 1px solid #ECEFF1;
 }
 
 #cilentree-block {
