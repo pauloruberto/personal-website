@@ -11,6 +11,7 @@ $("#hamburger-button").click(function() {
         $(".nav-link").css('visibility', 'visible');
         $(".nav-link").css('transition', '0.3s');
         $(".nav-link").css('opacity', '1');
+        $("#nav-links").css('visibility', 'visible');
 
         hamburger_open = 1;
     } else {
@@ -19,11 +20,11 @@ $("#hamburger-button").click(function() {
         $(".nav-link").css('visibility', 'hidden');
         $(".nav-link").css('opacity', '0');
         $(".nav-link").css('transition', '0.3s');
+        $("#nav-links").css('visibility', 'hidden');
 
         hamburger_open = 0;
     }
-
-})
+});
 
 // get the width of the open window
 var width = $(window).width();
