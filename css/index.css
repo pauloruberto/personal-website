@@ -86,57 +86,43 @@
   }
 }
 
-.hover-info-light, .hover-info-dark {
+.hover-info {
   opacity: 0;
+  transition: 0.35s;
   position: absolute;
-  top: 0;
-  left: 0;
+  top:0;
+  left:0;
   width: 100%;
   height: 100%;
-  transition: 0.35s;
 }
 
-.hover-info-light>h2 {
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  position: relative;
+.hover-text{
+  position: absolute;
+  left: 50%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 
-.hover-info-light>p {
-  color: white;
-  text-align: center;
-  position: relative;
-  top: 35%;
-}
-
-.hover-info-dark>h2 {
+.hover-text>h2 {
   color: #4A4A4A;
   text-align: center;
   font-weight: bold;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  font-size: 2em;
 }
 
-.hover-info-dark>p {
+.hover-text>p {
   color: #4A4A4A;
   text-align: center;
-  position: relative;
-  top: 35%;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
-#smc-block {
-  background-color: rgba(227, 242, 253, 1);
+#amazon-block{
+  background-color: #FAFAFA;
 }
 
 #ibm-block {
   background-color: #ECEFF1;
-}
-#amazon-block{
-  background-color: #FAFAFA;
 }
 
 #cilentree-block {
@@ -146,29 +132,36 @@
 #tank-block {
   background-color: rgba(115, 111, 114, 1);
 }
+#tank-block .hover-text *  {
+  color: white !important;
+}
 
 #volo-block {
   background-color: rgba(200, 230, 201, 1);
 }
 
-.hover-info-light:hover, .hover-info-dark:hover {
+#smc-block {
+  background-color: rgba(227, 242, 253, 1);
+}
+
+.hover-info:hover {
   opacity: 1;
   transition: 0.35s;
 }
 
-#volo-block .hover-info-dark:hover {
+#volo-block .hover-info:hover {
   background-color: rgba(200, 230, 201, 0.95);
 }
 
-#cilentree-block .hover-info-dark:hover {
+#cilentree-block .hover-info:hover {
   background-color: rgba(255, 236, 179, 0.95);
 }
 
-#smc-block .hover-info-dark:hover {
+#smc-block .hover-info:hover {
   background-color: rgba(227, 242, 253, 0.95);
 }
 
-#tank-block .hover-info-light:hover {
+#tank-block .hover-info:hover {
   background-color: rgba(115, 111, 114, 0.95);
 }
 
