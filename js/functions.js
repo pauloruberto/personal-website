@@ -21,7 +21,6 @@ $("#hamburger-button").click(function() {
         $('#nav').css('height', headline_height);
 
         $(".nav-link").css('visibility', 'visible');
-        $(".nav-link").css('transition', '0.3s');
         $(".nav-link").css('opacity', '1');
         $("#nav-links").css('visibility', 'visible');
 
@@ -31,7 +30,6 @@ $("#hamburger-button").click(function() {
 
         $(".nav-link").css('visibility', 'hidden');
         $(".nav-link").css('opacity', '0');
-        $(".nav-link").css('transition', '0.3s');
         $("#nav-links").css('visibility', 'hidden');
 
         hamburger_open = 0;
