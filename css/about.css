@@ -6,12 +6,12 @@
 
 #photo-block {
   position: relative;
-  max-height: 500px;
+  height: 650px;
 }
 
 #headshot {
   display: block;
-  max-height: 600px;
+  max-height: 650px;
   position: absolute;
   left: 50%;
   top: 50%;
