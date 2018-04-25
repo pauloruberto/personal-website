@@ -6,7 +6,7 @@
 
 #photo-block {
   position: relative;
-  min-height: 600px;
+  max-height: 500px;
 }
 
 #headshot {
@@ -25,7 +25,8 @@
 }
 
 #about-blurb {
-  font-size: 1em;
+  font-weight: 600;
+  font-size: 1.2em;
   padding-top: 20px;
   padding-bottom: 10px;
   width: 100%;
