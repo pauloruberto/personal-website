@@ -69,13 +69,13 @@
   opacity: 0;
   transition: 0.35s;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
 
-.hover-text{
+.hover-text {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -97,14 +97,14 @@
   text-transform: uppercase;
 }
 
-#amazon-block{
-  background-color: rgba(250,250,250,1);
-  border-top: 1px solid rgb(236,239,241);
+#amazon-block {
+  background-color: rgba(250, 250, 250, 1);
+  border-top: 1px solid rgb(236, 239, 241);
 }
 
 #ibm-block {
-  background-color: rgba(236,239,241,1);
-  border-top: 1px solid rgba(236,239,241,1);
+  background-color: rgba(236, 239, 241, 1);
+  border-top: 1px solid rgba(236, 239, 241, 1);
 }
 
 #cilentree-block {
@@ -114,7 +114,8 @@
 #tank-block {
   background-color: rgba(115, 111, 114, 1);
 }
-#tank-block .hover-text *  {
+
+#tank-block .hover-text * {
   color: white !important;
 }
 
@@ -132,11 +133,11 @@
 }
 
 #ibm-block .hover-info:hover {
-  background-color: rgba(236,239,241,0.5);
+  background-color: rgba(236, 239, 241, 0.5);
 }
 
 #amazon-block .hover-info:hover {
-  background-color: rgba(250,250,250,0.5);
+  background-color: rgba(250, 250, 250, 0.5);
 }
 
 #volo-block .hover-info:hover {

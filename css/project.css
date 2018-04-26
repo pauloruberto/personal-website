@@ -1,4 +1,4 @@
-a {
+.row a {
   text-decoration: underline;
 }
 
@@ -87,7 +87,7 @@ a {
   border: 0px;
 }
 
-#cilentree-photo-row img{
+#cilentree-photo-row img, #volo-photo-row img{
   width: auto;
   height: auto;
   max-height: 100%;
@@ -105,6 +105,23 @@ a {
   max-height: 100%;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+#volo-photo-row {
+  background-color: rgba(200, 230, 201, 1);
+  border: 0px;
+}
+
+#smc-photo-row {
+  background-color: rgba(227, 242, 253, 1);
+  border: 0px;
+}
+
+#volo-photo-row img, #smc-photo-row img{
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 640px) {
@@ -131,5 +148,9 @@ a {
 
   #tank-photo-row {
     min-height: 40em;
+  }
+  #volo-photo-row img, #smc-photo-row img{
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
