@@ -44,7 +44,7 @@ a:hover {
   font-size: 1em;
   width: 90%;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 #nav-links {
@@ -62,15 +62,13 @@ a:hover {
 .nav-link {
   visibility: hidden;
   box-sizing: border-box;
-  transition: 0s;
   opacity: 0;
   display: block;
   text-align: center;
   width: 100%;
   text-decoration: none;
   padding: 0em 0.75em;
-  font-weight: 400;
-  color: black;
+  font-weight: 700;
   margin-right: 10px;
   width: 100%;
   margin: 0 auto;
@@ -117,7 +115,6 @@ a:hover {
     border: 0px;
     margin-top: auto;
     font-size: 0.9em;
-    font-weight: 600;
     padding: 0em 0em;
   }
   #nav-brand {
