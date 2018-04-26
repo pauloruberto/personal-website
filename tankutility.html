@@ -20,80 +20,87 @@
   <!-- Foundation -->
   <link rel="stylesheet" href="css/foundation.css">
   <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Kadwa:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
   <!-- Personal CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/project_details.css">
+  <link rel="stylesheet" href="css/project.css">
 </head>
 
 <body>
   <nav id='nav'>
     <img id='hamburger-button' src='images/hamburger.svg' alt='navigation hamburger'>
-    <a id='nav-brand' href='index.html'>PAULO RUBERTO</a>
+    <a id='nav-brand' href='index'>PAULO RUBERTO</a>
     <div id='nav-links'>
       <a id='link1' class='nav-link' href='about'>ABOUT</a>
       <a id='link2' class='nav-link' href='/documents/paulo_ruberto_resume.pdf'>RESUME</a>
       <a id='link3' class='nav-link' href='index'>WORK</a>
     </div>
   </nav>
-
-  <div id='preview-image' class='row'>
-    <div class='small-12 column'>
-      <img src='/images/tank-utility/tank-utility-phone-preview.png' alt='tank utility preview' />
-    </div>
-  </div>
-
-  <div id='project-name' class='row'>
-    <div class='small-12 column'>
-      <h6>homebridge-tank-utility</h6>
-    </div>
-  </div>
-
-  <div id='project-description' class='row'>
-    <div class='small-12 column'>
-      <h6>PLUGIN DEVELOPMENT</h6>
-    </div>
-  </div>
-
-  <div class='row'>
-
-    <div id='overview-card' class='project-card small-12 medium-4 column'>
-      <h6>OVERVIEW</h6>
+  <div id='tank-description-row' class='description-row row'>
+    <div class='small-12 medium-offset-3 medium-6 large-offset-4 large-4 column'>
+      <h1 id='title'>homebridge-tank-utility</h1>
       <p>
-        <a href='https://www.npmjs.com/package/homebridge-tank-utility'>homebridge-tank-utility</a> is a plugin for
-        <a href='https://github.com/nfarina/homebridge'>HomeBridge</a>, the popular NodeJS server which ties unsuported devices into Apple's HomeKit protocol. This plugin integrates <a href='https://www.tankutility.com'>TankUtility</a> devices into HomeKit.
-        The propane tank monitors are exposed to HomeKit as humidity sensors, in order to get a percentage read out. Ideally as Apple expands the HomeKit Accessory Protocol specification, native support for tank levels will be added.
+        homebridge-tank-utility is a plugin for <a href='https://github.com/nfarina/homebridge'>HomeBridge</a>,
+        the popular NodeJS server which ties unsuported devices into Apple's HomeKit protocol.
+        This plugin integrates <a hred='https://www.tankutility.com'>Tank Utility</a> devices into HomeKit. The propane tank monitors are
+        exposed to HomeKit as humidity sensors, in order to get a percentage read out. Ideally as
+        Apple expands the HomeKit Accessory Protocol specification, native support for tank levels
+        will be added.
+      </p>
+      <p>
+        For some time, I've wanted to dive into creating a HomeBridge plugin. I had
+        previously been using HomeBridge to integrate my personal smart devices with pre-existing plugins.
+        When I purchased a TankUtility monitor and discovered that a plugin did
+        not yet exist, it was time for me to dip my toes into plugin development world.
+      </p>
+      <p>
+        homebridge-tank-utility can be found on both
+        <a href='https://github.com/pauloruberto/homebridge-tank-utility'>GitHub</a>
+        and the
+        <a href='https://www.npmjs.com/package/homebridge-tank-utility'> npm website </a>.
       </p>
     </div>
-
-    <div id='role-card' class='project-card small-12 medium-4 column'>
-      <h6>MY ROLE</h6>
-      <p>
-        For some time, I've wanted to dive into creating a HomeBridge plugin. I had previously been using HomeBridge to integrate smart devices within my own home, but they already had existing plugins. When I picked up a TankUtility monitor and saw that a plugin
-        did not yet exist, it was time for me to dip my toes into plugin development world.
-      </p>
+  </div>
+  <div id='tank-photo-row' class='photo-row row'>
+    <img id='tank-preview' src='/images/tank-utility/tank-utility-phone-preview.png' alt='homebridge-tank-utility preview' />
+  </div>
+  <div class='more-info-row row'>
+    <div id='skills' class='small-6 medium-3 large-2 column'>
+      <h6 class="sub-title">SKILLS</h6>
+      <ul>
+        <li>
+          Plugin Development
+        </li>
+        <li>
+          Javscript
+        </li>
+      </ul>
     </div>
-
-    <div id='tools-card' class='project-card small-12 medium-4 column'>
-      <h6>TOOLS USED</h6>
-      <ul id='tool-list'>
+    <div id='tools' class='small-6 medium-3 large-2 column'>
+      <h6 class="sub-title">TOOLS USED</h6>
+      <ul>
+        <li>
+          <a href='http://apidocs.tankutility.com'>Tank Utility API</a>
+        </li>
         <li>
           <a href='https://github.com/nfarina/homebridge'>HomeBridge</a>
         </li>
+      </ul>
+    </div>
+    <div id='tools' class='small-12 medium-4 column'>
+      <h6 class="sub-title">NEXT PROJECT</h6>
+      <ul>
         <li>
-          <a href='http://apidocs.tankutility.com'>TankUtility API</a>
+          <a class='next-project-link' href='volo'>Volo →</a>
         </li>
       </ul>
     </div>
   </div>
-
   <footer>
     <p>
       PAULO RUBERTO | 2018 SOFTWARE DEVELOPMENT & VISUAL DESIGN PORTFOLIO
     </p>
   </footer>
-
   <!-- Scripts -->
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>

@@ -95,6 +95,17 @@ a {
   max-width: 100%;
 }
 
+#tank-photo-row{
+  background-color: rgba(115, 111, 114, 1);
+  border: 0px;
+}
+
+#tank-photo-row img{
+  width: auto;
+  height: auto;
+  max-height: 100%;
+}
+
 @media screen and (min-width: 640px) {
   .description-row {
     padding-top: 50px;
@@ -114,6 +125,10 @@ a {
   }
 
   #cilentree-photo-row {
+    min-height: 40em;
+  }
+
+  #tank-photo-row {
     min-height: 40em;
   }
 }
