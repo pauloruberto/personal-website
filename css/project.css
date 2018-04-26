@@ -1,3 +1,7 @@
+a {
+  text-decoration: underline;
+}
+
 .description-row {
   padding-top: 20px;
   padding-bottom: 50px;
@@ -18,10 +22,6 @@
   padding-right: 20px;
 }
 
-.description-row a {
-  text-decoration: underline;
-}
-
 .photo-row {
   min-height: 500px;
   position: relative;
@@ -39,12 +39,31 @@
 }
 
 .sub-title {
+  padding-top: 50px;
   width: 100%;
   font-size: 1em;
+  font-weight: 400;
+  padding-left: 1.2em;
+  letter-spacing: 1px;
+}
+
+.more-info-row {
+  padding-bottom: 50px;
+}
+
+.more-info-row ul {
+  padding: 0;
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 0.9em
+}
+
+.next-project-link{
+  font-size: 1.6em;
+  font-weight: 700;
 }
 
 /* specific page styles */
-
 #ibm-logo-photo-row {
   background-color: rgba(236, 239, 241, 1);
   border: 0px;
@@ -61,6 +80,19 @@
   height: auto;
   max-height: 80%;
   max-width: 95%;
+}
+
+#cilentree-photo-row{
+  min-height: 20em;
+  background-color: rgba(255, 236, 179, 1);
+  border: 0px;
+}
+
+#cilentree-photo-row img{
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 640px) {
@@ -80,6 +112,8 @@
   #ibm-preview-photo-row {
     min-height: 50em;
   }
-  #ibm-preview-photo-row img {
+
+  #cilentree-photo-row {
+    min-height: 40em;
   }
 }
