@@ -20,7 +20,7 @@
   <!-- Foundation -->
   <link rel="stylesheet" href="css/foundation.css">
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
   <!-- Personal CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/project.css">
@@ -99,10 +99,11 @@
     </div>
   </div>
   <footer>
-    <p>
-      PAULO RUBERTO | 2023 SOFTWARE DEVELOPMENT & VISUAL DESIGN PORTFOLIO
-    </p>
+    <p>PAULO RUBERTO | <span id="year"></span> SOFTWARE DEVELOPMENT PORTFOLIO</p>
   </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
   <!-- Scripts -->
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>
