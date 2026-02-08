@@ -212,4 +212,23 @@
   .project-card {
     padding: var(--space-3);
   }
+
+  .about-links {
+    flex-wrap: nowrap;
+    gap: 0.4rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .about-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .about-links a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 0.83rem;
+    padding: 0.38rem 0.58rem;
+  }
 }

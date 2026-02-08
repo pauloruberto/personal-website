@@ -219,5 +219,22 @@ p {
 
   .site-links {
     justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 0.4rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .site-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-links a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 0.82rem;
+    padding: 0.35rem 0.35rem;
   }
 }
