@@ -1,121 +1,125 @@
 <!doctype html>
-<html>
-
+<html lang="en">
 <head>
-  <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paulo Ruberto</title>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117502504-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-117502504-1');
-  </script>
-  <!-- Foundation -->
-  <link rel="stylesheet" href="css/foundation.css">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
-  <!-- Personal CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paulo Ruberto | Senior Software Engineer</title>
+  <meta name="description" content="Portfolio of Paulo Ruberto, a Senior Software Engineer focused on scalable backend systems, AWS, and compliance infrastructure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
+<body id="top">
+  <div class="site-shell">
+    <header class="site-nav">
+      <a class="site-brand" href="#top" aria-label="Paulo Ruberto portfolio homepage">
+        <span class="site-brand-name">Paulo Ruberto</span>
+        <span class="site-brand-meta">Senior Software Engineer Portfolio</span>
+      </a>
+      <nav class="site-links" aria-label="Primary">
+        <a href="#experience">Companies</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="documents/paulo_ruberto_resume.pdf">Resume</a>
+      </nav>
+    </header>
 
-<body>
-  <nav id='nav'>
-    <img id='hamburger-button' src='images/hamburger.svg' alt='navigation hamburger' loading="lazy"/>
-    <a id='nav-brand' href='index'>PAULO RUBERTO</a>
-    <div id='nav-links'>
-      <a id='link1' class='nav-link' href='about'>ABOUT</a>
-      <a id='link2' class='nav-link' href='/documents/paulo_ruberto_resume.pdf'>RESUME</a>
-      <a id='link3' class='nav-link' href='index'>WORK</a>
-    </div>
-  </nav>
-  <div id='intro-block' class='small-12 medium-6 column'>
-    <h2 id='intro-tag'>Hey, I'm Paulo!</h2>
-    <p id='intro-blurb'>
-      I'm currently a Software Development Engineer II at Amazon, working within Last Mile Technology.
-      Check out my work and say hello! 👋
-    </p>
-    <p id='intro-location'>
-      TORONTO, ON | SOFTWARE ENGINEERING & VISUAL DESIGN
-    </p>
+    <main class="page-content">
+      <section class="hero surface" aria-label="Introduction">
+        <p class="eyebrow">Toronto, ON</p>
+        <h1>Senior software engineer building scalable backend systems and compliance infrastructure.</h1>
+        <p class="hero-copy">
+          7+ years of experience designing and leading cloud-native solutions in AWS, with a focus on Java,
+          distributed systems, event-driven architecture, and high-reliability operational software.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="documents/paulo_ruberto_resume.pdf">View resume</a>
+          <a class="button button-secondary" href="mailto:p.ruberto@me.com?subject=Hey%20Paulo">Contact me</a>
+        </div>
+      </section>
+
+      <section id="experience" class="section" aria-label="Companies">
+        <div class="section-surface surface">
+          <header class="section-header">
+            <h2 class="section-title">Companies I've Built With</h2>
+          </header>
+          <div class="company-logos">
+            <img src="images/gusto-logo.svg" alt="Gusto logo" loading="lazy">
+            <img src="images/amazon-logo.svg" alt="Amazon logo" loading="lazy">
+            <img src="images/ibm-logo.svg" alt="IBM logo" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-label="Projects">
+        <div class="section-surface surface">
+          <header class="section-header">
+            <h2 class="section-title">Projects</h2>
+          </header>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-media">
+                <img src="images/tank-utility.png" alt="Tank Utility preview" loading="lazy">
+              </div>
+              <div class="project-copy">
+                <h3>homebridge-tank-utility</h3>
+                <p>Open-source HomeKit integration plugin for Tank Utility monitoring devices.</p>
+                <p class="project-links">
+                  <a href="https://github.com/pauloruberto/homebridge-tank-utility">GitHub</a>
+                  ·
+                  <a href="https://www.npmjs.com/package/homebridge-tank-utility">npm</a>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-label="About Paulo Ruberto">
+        <div class="section-surface surface">
+          <header class="section-header">
+            <h2 class="section-title">About</h2>
+          </header>
+          <div class="about-layout">
+            <div class="about-copy">
+              <p>
+                I am currently building on the HRX Compliance team at Gusto, focused on robust, maintainable software
+                that scales.
+              </p>
+              <p>
+                Previously at Amazon Last Mile, I led and built services for legal working-hour and break compliance,
+                including integrations with external time and attendance systems that improved enforcement accuracy by
+                80%, re-architecture work that reduced break latency by 68%, and infrastructure that reduced cost per
+                customer return by 38%.
+              </p>
+              <p>
+                I hold a H.B.Sc in Computer Science from the University of Toronto and work primarily with Java, AWS,
+                and distributed backend architectures.
+              </p>
+              <div class="about-links">
+                <a href="mailto:p.ruberto@me.com?subject=Hey%20Paulo">Email</a>
+                <a href="https://github.com/pauloruberto">GitHub</a>
+                <a href="https://www.linkedin.com/in/pauloruberto/">LinkedIn</a>
+                <a href="documents/paulo_ruberto_resume.pdf">Resume</a>
+              </div>
+            </div>
+            <figure class="about-photo">
+              <img src="images/headshot.jpeg" alt="Portrait of Paulo Ruberto" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Paulo Ruberto <span id="year"></span></p>
+    </footer>
   </div>
-  <div id='project-blocks' class='row'>
-    <div id='amazon-block' class='small-12 medium-6 column'>
-      <a href='amazon'>
-        <img id='amazon-preview' src='/images/amazon-logo.svg' alt='amazon logo' loading="lazy"/>
-        <div class='hover-info'></div>
-      </a>
-    </div>
-    <div id='ibm-block' class='small-12 medium-6 column'>
-      <a href='ibm'>
-        <img id='watson-preview' src='/images/ibm-logo.svg' alt='ibm logo' loading="lazy"/>
-        <div class='hover-info'></div>
-      </a>
-    </div>
-    <div id='cilentree-block' class='small-12 medium-4 column'>
-      <a href='cilentree'>
-        <img src='/images/cilentree.png' alt='cilentree preview' loading="lazy"/>
-        <div class='hover-info'>
-          <div class="hover-text">
-            <h2>Cilentreé</h2>
-            <p>mobile prototyping</p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div id='tank-block' class='small-12 medium-4 column'>
-      <a href='tankutility'>
-        <img id='tank-logo' src='/images/tank-utility.png' alt='tank utility logo' loading="lazy"/>
-        <div class='hover-info'>
-          <div class="hover-text">
-            <h2>homebridge-tank-utility</h2>
-            <p>plugin development</p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div id='volo-block' class='small-12 medium-4 column'>
-      <a href='volo'>
-        <img src='/images/volo.png' alt='volo preview' loading="lazy"/>
-        <div class='hover-info'>
-          <div class="hover-text">
-            <h2>Volo</h2>
-            <p>icon design</p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div id='smc-block' class='small-12 column'>
-      <a href='smc'>
-        <img id='smc-preview' src='/images/smc.png' alt='smc preview' loading="lazy"/>
-        <div class='hover-info'>
-          <div class="hover-text">
-            <h2>SMC Orientation</h2>
-            <p>website development</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <footer>
-    <p>PAULO RUBERTO | <span id="year"></span> SOFTWARE DEVELOPMENT PORTFOLIO</p>
-  </footer>
+
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-  <!-- Scripts -->
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/functions.js"></script>
 </body>
-
 </html>

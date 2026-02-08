@@ -1,110 +1,71 @@
 <!doctype html>
-<html>
-
+<html lang="en">
 <head>
-  <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paulo Ruberto » homebridge-tank-utility</title>
-  <!-- Google Analytics -->
-  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-117502504-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-117502504-1');
-  </script>
-  <!-- Foundation -->
-  <link rel="stylesheet" href="css/foundation.css">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
-  <!-- Personal CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>homebridge-tank-utility | Paulo Ruberto</title>
+  <meta name="description" content="homebridge-tank-utility project overview by Paulo Ruberto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/project.css">
 </head>
-
 <body>
-  <nav id='nav'>
-    <img id='hamburger-button' src='images/hamburger.svg' alt='navigation hamburger'>
-    <a id='nav-brand' href='index'>PAULO RUBERTO</a>
-    <div id='nav-links'>
-      <a id='link1' class='nav-link' href='about'>ABOUT</a>
-      <a id='link2' class='nav-link' href='/documents/paulo_ruberto_resume.pdf'>RESUME</a>
-      <a id='link3' class='nav-link' href='index'>WORK</a>
-    </div>
-  </nav>
-  <div id='tank-description-row' class='description-row row'>
-    <div class='small-12 medium-offset-3 medium-6 large-offset-4 large-4 column'>
-      <h1 id='title'>homebridge-tank-utility</h1>
-      <p>
-        homebridge-tank-utility is a plugin for
-        <a href='https://github.com/nfarina/homebridge'>HomeBridge</a>, the popular NodeJS server which ties unsuported devices into Apple's HomeKit protocol. This plugin integrates
-        <a hred='https://www.tankutility.com'>Tank Utility</a> devices into HomeKit. The propane tank monitors are exposed to HomeKit as humidity sensors, in order to get a percentage read out. Ideally as Apple expands the HomeKit Accessory Protocol specification,
-        native support for tank levels will be added.
-      </p>
-      <p>
-        For some time, I've wanted to dive into creating a HomeBridge plugin. I had previously been using HomeBridge to integrate my personal smart devices with pre-existing plugins. When I purchased a TankUtility monitor and discovered that a plugin did not
-        yet exist, it was time for me to dip my toes into plugin development world.
-      </p>
-      <p>
-        homebridge-tank-utility can be found on both
-        <a href='https://github.com/pauloruberto/homebridge-tank-utility'>GitHub</a> and the
-        <a href='https://www.npmjs.com/package/homebridge-tank-utility'>
-            npm website
-          </a>.
-      </p>
-    </div>
-  </div>
-  <div id='tank-photo-row' class='photo-row row'>
-    <img id='tank-preview' src='/images/tank-utility/tank-utility-phone-preview.png' alt='homebridge-tank-utility preview' />
-  </div>
-  <div class='more-info-row row'>
-    <div id='skills' class='small-6 medium-3 large-2 column'>
-      <h6 class="sub-title">SKILLS</h6>
-      <ul>
-        <li>
-          Plugin Development
-        </li>
-        <li>
-          Javscript
-        </li>
-      </ul>
-    </div>
-    <div id='tools' class='small-6 medium-3 large-2 column'>
-      <h6 class="sub-title">TOOLS USED</h6>
-      <ul>
-        <li>
-          <a href='http://apidocs.tankutility.com'>Tank Utility API</a>
-        </li>
-        <li>
-          <a href='https://github.com/nfarina/homebridge'>HomeBridge</a>
-        </li>
-      </ul>
-    </div>
-    <div id='tools' class='small-12 medium-4 column'>
-      <h6 class="sub-title">NEXT PROJECT</h6>
-      <ul>
-        <li>
-          <a class='next-project-link' href='volo'>Volo →</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <footer>
-    <p>PAULO RUBERTO | <span id="year"></span> SOFTWARE DEVELOPMENT PORTFOLIO</p>
-  </footer>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-  <!-- Scripts -->
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/functions.js"></script>
-</body>
+  <div class="site-shell">
+    <header class="site-nav">
+      <a class="site-brand" href="index.html">Paulo Ruberto</a>
+      <nav class="site-links" aria-label="Primary">
+        <a href="index.html" aria-current="page">Work</a>
+        <a href="about.html">About</a>
+        <a href="documents/paulo_ruberto_resume.pdf">Resume</a>
+      </nav>
+    </header>
 
+    <main class="project-layout">
+      <section class="project-intro">
+        <p class="eyebrow">Project</p>
+        <h1>homebridge-tank-utility</h1>
+        <p>
+          I built this plugin to integrate Tank Utility propane monitors with HomeKit through Homebridge. It exposed
+          sensor data in a way that made tank levels accessible in existing Apple Home dashboards and automations.
+        </p>
+        <p>
+          The project focused on practical API integration, plugin architecture, and shipping a useful tool for a
+          niche but active community.
+        </p>
+      </section>
+
+      <section class="project-media project-media-dark" aria-label="Tank utility preview">
+        <img src="images/tank-utility.png" alt="Tank Utility preview" loading="lazy">
+      </section>
+
+      <section class="project-meta" aria-label="Project details">
+        <div>
+          <h2>Focus</h2>
+          <ul>
+            <li>Plugin development</li>
+            <li>API integration</li>
+            <li>Home automation</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Links</h2>
+          <ul>
+            <li><a href="https://github.com/pauloruberto/homebridge-tank-utility">GitHub</a></li>
+            <li><a href="https://www.npmjs.com/package/homebridge-tank-utility">npm package</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Paulo Ruberto <span id="year"></span></p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

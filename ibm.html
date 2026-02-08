@@ -1,71 +1,70 @@
 <!doctype html>
-<html>
-
+<html lang="en">
 <head>
-  <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paulo Ruberto » IBM</title>
-  <!-- Google Analytics -->
-  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-117502504-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-117502504-1');
-  </script>
-  <!-- Foundation -->
-  <link rel="stylesheet" href="css/foundation.css">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
-  <!-- Personal CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IBM | Paulo Ruberto</title>
+  <meta name="description" content="IBM experience summary by Paulo Ruberto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/project.css">
 </head>
-
 <body>
-  <nav id='nav'>
-    <img id='hamburger-button' src='images/hamburger.svg' alt='navigation hamburger'>
-    <a id='nav-brand' href='index'>PAULO RUBERTO</a>
-    <div id='nav-links'>
-      <a id='link1' class='nav-link' href='about'>ABOUT</a>
-      <a id='link2' class='nav-link' href='/documents/paulo_ruberto_resume.pdf'>RESUME</a>
-      <a id='link3' class='nav-link' href='index'>WORK</a>
-    </div>
-  </nav>
-  <div id='ibm-description-row' class='description-row row'>
-    <div class='small-12 medium-offset-3 medium-6 large-offset-4 large-4 column'>
-      <h1 id='title'>IBM</h1>
-      <p>
-        During my internship at IBM, I had the opportunity to work on the
-        <a href='https://www.ibm.com/watson-analytics'>Watson Analytics</a> team as a front-end developer and UI Designer. I was tasked with designing and developing functional prototypes that were used in user-testing with stakeholders.
-      </p>
-      <p>
-        After my internship was complete, I was brought back onto the Watson Analytics team as an on call front-end developer. I assisted in the development of the redesigned marketing website, which has since launched to the public.
-      </p>
-    </div>
-  </div>
-  <div id='ibm-preview-photo-row' class='photo-row row'>
-    <img id='watson-preview' src='/images/ibm/ibm-website.png' alt='watson analytics website' />
-  </div>
-  <div id='ibm-logo-photo-row' class='photo-row row'>
-    <img id='ibm-preview' src='/images/ibm-logo.svg' alt='ibm logo' />
-  </div>
-  <footer>
-    <p>PAULO RUBERTO | <span id="year"></span> SOFTWARE DEVELOPMENT PORTFOLIO</p>
-  </footer>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-  <!-- Scripts -->
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/functions.js"></script>
-</body>
+  <div class="site-shell">
+    <header class="site-nav">
+      <a class="site-brand" href="index.html">Paulo Ruberto</a>
+      <nav class="site-links" aria-label="Primary">
+        <a href="index.html" aria-current="page">Work</a>
+        <a href="about.html">About</a>
+        <a href="documents/paulo_ruberto_resume.pdf">Resume</a>
+      </nav>
+    </header>
 
+    <main class="project-layout">
+      <section class="project-intro">
+        <p class="eyebrow">Experience</p>
+        <h1>IBM</h1>
+        <p>
+          At IBM, I worked on the Watson Analytics team as a front-end developer and UI designer. I helped design and
+          implement functional prototypes for product and stakeholder testing.
+        </p>
+        <p>
+          I later continued contributing to the redesigned Watson Analytics marketing experience as an on-call
+          front-end developer.
+        </p>
+      </section>
+
+      <section class="project-media project-media-light" aria-label="IBM logo">
+        <img src="images/ibm-logo.svg" alt="IBM logo" loading="lazy">
+      </section>
+
+      <section class="project-meta" aria-label="Experience details">
+        <div>
+          <h2>Focus</h2>
+          <ul>
+            <li>Front-end engineering</li>
+            <li>UI design</li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Organization</h2>
+          <ul>
+            <li><a href="https://www.ibm.com/">IBM</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Paulo Ruberto <span id="year"></span></p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
