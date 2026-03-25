@@ -79,3 +79,33 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Legacy page layout (replaces Foundation grid) */
+.legacy-row {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.legacy-row-centered {
+  justify-content: center;
+}
+
+.legacy-col-centered {
+  width: 100%;
+  max-width: 580px;
+}
+
+.legacy-col-wide-centered {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.legacy-col {
+  flex: 1;
+  min-width: 130px;
+}

@@ -1,50 +1,55 @@
-// track if burger is open or not
 var hamburger_open = 0;
 
+document.addEventListener('DOMContentLoaded', function() {
+  var page = window.location.pathname;
 
-$( document ).ready(function() {
-    var page = window.location.pathname;
+  if (page === '/about' || page === '/about.html') {
+    var link1 = document.getElementById('link1');
+    if (link1) link1.style.opacity = '0.25';
+  } else if (page === '/' || page === '/index.html' || page === '/index') {
+    var link3 = document.getElementById('link3');
+    if (link3) link3.style.opacity = '0.25';
+  }
 
-    // set the nav bar to display current page
-    if(page == '/about' || page == '/about.html'){
-      $("#link1").css('opacity', '0.25');
-    } else if(page == '/' || page == '/index.html' || page == '/index'){
-      $("#link3").css('opacity', '0.25');
-    }
-});
+  var hamburgerBtn = document.getElementById('hamburger-button');
+  if (hamburgerBtn) {
+    hamburgerBtn.addEventListener('click', function() {
+      var nav = document.getElementById('nav');
+      var navLinks = document.querySelectorAll('.nav-link');
+      var navLinksContainer = document.getElementById('nav-links');
 
-// when the hamburger is clicked
-$("#hamburger-button").click(function() {
-    var headline_height = $("#headline").outerHeight();
-
-    if (hamburger_open == 0) {
-        $('#nav').css('height', headline_height);
-
-        $(".nav-link").css('visibility', 'visible');
-        $(".nav-link").css('opacity', '1');
-        $("#nav-links").css('visibility', 'visible');
-
+      if (hamburger_open === 0) {
+        var headline = document.getElementById('headline');
+        var headline_height = headline ? headline.offsetHeight : 0;
+        if (nav) nav.style.height = headline_height + 'px';
+        navLinks.forEach(function(el) {
+          el.style.visibility = 'visible';
+          el.style.opacity = '1';
+        });
+        if (navLinksContainer) navLinksContainer.style.visibility = 'visible';
         hamburger_open = 1;
-    } else {
-        $('#nav').css('height', '70px');
-
-        $(".nav-link").css('visibility', 'hidden');
-        $(".nav-link").css('opacity', '0');
-        $("#nav-links").css('visibility', 'hidden');
-
+      } else {
+        if (nav) nav.style.height = '70px';
+        navLinks.forEach(function(el) {
+          el.style.visibility = 'hidden';
+          el.style.opacity = '0';
+        });
+        if (navLinksContainer) navLinksContainer.style.visibility = 'hidden';
         hamburger_open = 0;
-    }
+      }
+    });
+  }
 });
 
-// get the width of the open window
-var width = $(window).width();
+window.addEventListener('resize', function() {
+  var width = window.innerWidth;
 
-// run functions on window resize
-$(window).resize(function() {
-    width = $(window).width();
-
-    if ((width >= 640) && (hamburger_open == 1)) {
-        $(".nav-link").css('transition', '0s');
-        $('#nav').css('height', '70px');
-    }
+  if (width >= 640 && hamburger_open === 1) {
+    var nav = document.getElementById('nav');
+    var navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(function(el) {
+      el.style.transition = '0s';
+    });
+    if (nav) nav.style.height = '70px';
+  }
 });
