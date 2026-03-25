@@ -3,9 +3,9 @@
   --text: #1f2623;
   --text-soft: #3f4b44;
   --line: rgba(160, 176, 167, 0.72);
-  --brand: #2f7a58;
-  --radius: 22px;
-  --radius-sm: 14px;
+  --brand: #4a7a30;
+  --radius: 12px;
+  --radius-sm: 8px;
   --surface: rgba(255, 255, 255, 0.68);
   --surface-strong: rgba(255, 255, 255, 0.82);
   --space-1: 0.5rem;
@@ -31,12 +31,7 @@ body {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
   color: var(--text);
-  background:
-    radial-gradient(circle at 20% 14%, rgba(102, 117, 238, 0.42) 0%, rgba(102, 117, 238, 0) 26%),
-    radial-gradient(circle at 82% 34%, rgba(57, 148, 105, 0.36) 0%, rgba(57, 148, 105, 0) 34%),
-    radial-gradient(circle at 14% 75%, rgba(47, 122, 88, 0.44) 0%, rgba(47, 122, 88, 0) 32%),
-    radial-gradient(circle at 72% 78%, rgba(110, 190, 145, 0.28) 0%, rgba(110, 190, 145, 0) 30%),
-    var(--bg);
+  background: var(--bg);
   min-height: 100vh;
 }
 
@@ -162,7 +157,7 @@ p {
 .button-primary {
   background: var(--brand);
   color: #fff;
-  box-shadow: 0 10px 20px rgba(47, 122, 88, 0.2);
+  box-shadow: 0 10px 20px rgba(74, 122, 48, 0.2);
 }
 
 .button-secondary {
