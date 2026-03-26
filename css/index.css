@@ -68,7 +68,12 @@
   gap: var(--space-5);
 }
 
-.work-entry {
+.work-company {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-company-header {
   display: flex;
   align-items: flex-start;
   gap: var(--space-4);
@@ -79,49 +84,46 @@
   width: 52px;
   height: 52px;
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #fff;
-  letter-spacing: -0.01em;
-  font-family: "Inter", sans-serif;
+  object-fit: cover;
 }
 
-.work-icon--gusto  { background: #E54D2E; }
-.work-icon--amazon { background: #232F3E; }
-.work-icon--aws    { background: #FF9900; color: #232F3E; }
-.work-icon--ibm    { background: #1F70C1; }
-.work-icon--uoft   { background: #002A5C; }
-
-.work-body {
-  padding-top: 5px;
+.work-company-meta {
+  padding-top: 4px;
 }
 
-.work-title {
+.work-company-name {
   font-size: 0.9375rem;
-  color: var(--text);
   line-height: 1.4;
+  margin: 0;
 }
 
-.work-title strong {
-  color: var(--text);
-}
-
-.work-subtitle {
-  color: var(--text-muted);
-  font-weight: 400;
-}
-
-.work-meta {
-  margin-top: 0.2rem;
+.work-company-period {
   font-size: 0.84rem;
   color: var(--text-muted);
+  margin: 0.15rem 0 0;
 }
 
-.work-dates {
-  margin-left: 0.35rem;
+.work-roles {
+  list-style: none;
+  margin: var(--space-3) 0 0 calc(52px + var(--space-4));
+  padding: 0 0 0 var(--space-4);
+  border-left: 2px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.work-role-title {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.work-role-meta {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
 }
 
 /* ── Projects ── */
@@ -215,6 +217,9 @@
     width: 44px;
     height: 44px;
     border-radius: 10px;
-    font-size: 0.875rem;
+  }
+
+  .work-roles {
+    margin-left: calc(44px + var(--space-4));
   }
 }
