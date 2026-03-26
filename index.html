@@ -7,16 +7,18 @@
   <meta name="description" content="Portfolio of Paulo Ruberto, a Senior Software Engineer focused on scalable backend systems, AWS, and compliance infrastructure.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
-<body id="top">
+<body>
   <div class="site-shell">
+
     <header class="site-nav">
-      <a class="site-brand" href="#top" aria-label="Paulo Ruberto portfolio homepage">
-        <span class="site-brand-name">Paulo Ruberto</span>
-      </a>
+      <div class="site-id">
+        <p>Senior Software Engineer <strong>Paulo Ruberto</strong></p>
+        <p>Currently at <strong>Gusto</strong></p>
+      </div>
       <nav class="site-links" aria-label="Primary">
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
@@ -26,100 +28,94 @@
     </header>
 
     <main class="page-content">
+
       <section class="hero" aria-label="Introduction">
-        <p class="eyebrow">Toronto, ON</p>
-        <h1>Senior software engineer building scalable backend systems and compliance infrastructure.</h1>
-        <p class="hero-copy">
-          7+ years of experience designing and leading cloud-native solutions in AWS, with a focus on Java,
-          distributed systems, event-driven architecture, and high-reliability operational software.
+        <img class="hero-photo" src="images/headshot.jpeg" alt="Paulo Ruberto" loading="eager">
+        <p class="hero-intro">
+          Hey, I'm Paulo! A Senior Software Engineer with <strong>7+ years of experience</strong>
+          building scalable backend systems and compliance infrastructure. I design and build
+          cloud-native services in AWS, work primarily with Java and distributed systems, and
+          care deeply about reliability and operational excellence.
         </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="documents/paulo_ruberto_resume.pdf">View resume</a>
-          <a class="button button-secondary" href="mailto:p.ruberto@me.com?subject=Hey%20Paulo">Contact me</a>
-        </div>
+        <nav class="hero-links" aria-label="Social">
+          <a href="mailto:p.ruberto@me.com?subject=Hey%20Paulo">Email</a>
+          <a href="https://github.com/pauloruberto">GitHub</a>
+          <a href="https://www.linkedin.com/in/pauloruberto/">LinkedIn</a>
+          <a href="documents/paulo_ruberto_resume.pdf">Resume</a>
+        </nav>
       </section>
 
-      <section id="experience" class="section" aria-label="Experience">
-        <header class="section-header">
-          <h2 class="section-title">Experience</h2>
-        </header>
-        <ol class="work-timeline" role="list">
+      <section id="experience" class="section" aria-label="Work experience">
+        <ol class="work-list" role="list">
           <li class="work-entry">
-            <div class="work-role">Senior Software Engineer <span class="work-company">· Gusto</span></div>
-            <div class="work-meta">HRX Compliance &ensp;·&ensp; <time>Jun 2025 – Present</time></div>
+            <span class="work-icon work-icon--gusto" aria-hidden="true">G</span>
+            <div class="work-body">
+              <p class="work-title">Senior Software Engineer at <strong>Gusto</strong></p>
+              <p class="work-meta">Toronto, ON <span class="work-dates">Jun 2025 – Present</span></p>
+            </div>
           </li>
           <li class="work-entry">
-            <div class="work-role">Software Development Engineer II <span class="work-company">· Amazon</span></div>
-            <div class="work-meta">Last Mile &ensp;·&ensp; <time>Dec 2020 – Jun 2025</time></div>
+            <span class="work-icon work-icon--amazon" aria-hidden="true">A</span>
+            <div class="work-body">
+              <p class="work-title">Software Development Engineer II at <strong>Amazon</strong></p>
+              <p class="work-meta">Toronto, ON <span class="work-dates">Dec 2020 – Jun 2025</span></p>
+            </div>
           </li>
           <li class="work-entry">
-            <div class="work-role">Software Development Engineer I <span class="work-company">· Amazon</span></div>
-            <div class="work-meta">Last Mile &ensp;·&ensp; <time>Jun 2019 – Dec 2020</time></div>
+            <span class="work-icon work-icon--amazon" aria-hidden="true">A</span>
+            <div class="work-body">
+              <p class="work-title">Software Development Engineer I at <strong>Amazon</strong></p>
+              <p class="work-meta">Toronto, ON <span class="work-dates">Jun 2019 – Dec 2020</span></p>
+            </div>
           </li>
         </ol>
       </section>
 
       <section id="projects" class="section" aria-label="Projects">
-        <header class="section-header">
-          <h2 class="section-title">Projects</h2>
-        </header>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-media">
-              <img src="images/tank-utility.png" alt="Tank Utility preview" loading="lazy">
+        <div class="project-grid">
+          <article class="project-item">
+            <p class="project-label">Open Source · 2019</p>
+            <div class="project-thumb">
+              <img src="images/tank-utility.png" alt="Tank Utility app preview" loading="lazy">
             </div>
-            <div class="project-copy">
-              <h3>homebridge-tank-utility</h3>
-              <p>Open-source HomeKit integration plugin for Tank Utility monitoring devices.</p>
-              <p class="project-links">
+            <div class="project-info">
+              <h3 class="project-title">homebridge-tank-utility</h3>
+              <p class="project-desc">Open-source HomeKit integration plugin for Tank Utility propane monitoring devices.</p>
+              <div class="project-links">
                 <a href="https://github.com/pauloruberto/homebridge-tank-utility">GitHub</a>
-                ·
                 <a href="https://www.npmjs.com/package/homebridge-tank-utility">npm</a>
-              </p>
+              </div>
             </div>
           </article>
         </div>
       </section>
 
       <section id="about" class="section" aria-label="About Paulo Ruberto">
-        <header class="section-header">
-          <h2 class="section-title">About Me</h2>
-        </header>
-        <div class="about-layout">
-            <div class="about-copy">
-              <p>
-                I am currently building on the HRX Compliance team at Gusto, focused on robust, maintainable software
-                that scales.
-              </p>
-              <p>
-                Previously at Amazon Last Mile, I led and built services for legal working-hour and break compliance,
-                including integrations with external time and attendance systems that improved enforcement accuracy by
-                80%, re-architecture work that reduced break latency by 68%, and infrastructure that reduced cost per
-                customer return by 38%.
-              </p>
-              <p>
-                I hold a H.B.Sc in Computer Science from the University of Toronto and work primarily with Java, AWS,
-                and distributed backend architectures.
-              </p>
-              <div class="about-links">
-                <a href="mailto:p.ruberto@me.com?subject=Hey%20Paulo">Email Me</a>
-                <a href="https://github.com/pauloruberto">GitHub</a>
-                <a href="https://www.linkedin.com/in/pauloruberto/">LinkedIn</a>
-                <a href="documents/paulo_ruberto_resume.pdf">Resume</a>
-              </div>
-            </div>
-            <figure class="about-photo">
-              <img src="images/headshot.jpeg" alt="Portrait of Paulo Ruberto" loading="lazy">
-            </figure>
-          </div>
+        <div class="about-body">
+          <p>
+            I am currently building on the HRX Compliance team at Gusto, focused on robust,
+            maintainable software that scales.
+          </p>
+          <p>
+            Previously at Amazon Last Mile, I led and built services for legal working-hour and
+            break compliance, including integrations with external time and attendance systems
+            that improved enforcement accuracy by 80%, re-architecture work that reduced break
+            latency by 68%, and infrastructure that reduced cost per customer return by 38%.
+          </p>
+          <p>
+            I hold a H.B.Sc in Computer Science from the University of Toronto and work
+            primarily with Java, AWS, and distributed backend architectures.
+          </p>
+        </div>
       </section>
+
     </main>
 
     <footer class="site-footer">
       <p>Paulo Ruberto <span id="year"></span></p>
     </footer>
-  </div>
 
+  </div>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
