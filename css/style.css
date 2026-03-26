@@ -166,14 +166,6 @@ p {
   color: var(--text);
 }
 
-.surface {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: 0 14px 28px rgba(18, 23, 28, 0.08);
-  backdrop-filter: blur(2px);
-}
-
 .site-footer {
   margin-top: var(--space-6);
   padding-top: var(--space-3);

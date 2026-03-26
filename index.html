@@ -18,7 +18,7 @@
         <span class="site-brand-name">Paulo Ruberto</span>
       </a>
       <nav class="site-links" aria-label="Primary">
-        <a href="#experience">Companies</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="documents/paulo_ruberto_resume.pdf">Resume</a>
@@ -39,49 +39,53 @@
         </div>
       </section>
 
-      <section id="experience" class="section" aria-label="Companies">
-        <div class="section-surface surface">
-          <header class="section-header">
-            <h2 class="section-title">Experience</h2>
-          </header>
-          <div class="company-logos">
-            <img src="images/gusto-logo.svg" alt="Gusto logo" loading="lazy">
-            <img src="images/amazon-logo.svg" alt="Amazon logo" loading="lazy">
-            <img src="images/ibm-logo.svg" alt="IBM logo" loading="lazy">
-          </div>
-        </div>
+      <section id="experience" class="section" aria-label="Experience">
+        <header class="section-header">
+          <h2 class="section-title">Experience</h2>
+        </header>
+        <ol class="work-timeline" role="list">
+          <li class="work-entry">
+            <div class="work-role">Senior Software Engineer <span class="work-company">· Gusto</span></div>
+            <div class="work-meta">HRX Compliance &ensp;·&ensp; <time>Jun 2025 – Present</time></div>
+          </li>
+          <li class="work-entry">
+            <div class="work-role">Software Development Engineer II <span class="work-company">· Amazon</span></div>
+            <div class="work-meta">Last Mile &ensp;·&ensp; <time>Dec 2020 – Jun 2025</time></div>
+          </li>
+          <li class="work-entry">
+            <div class="work-role">Software Development Engineer I <span class="work-company">· Amazon</span></div>
+            <div class="work-meta">Last Mile &ensp;·&ensp; <time>Jun 2019 – Dec 2020</time></div>
+          </li>
+        </ol>
       </section>
 
       <section id="projects" class="section" aria-label="Projects">
-        <div class="section-surface surface">
-          <header class="section-header">
-            <h2 class="section-title">Projects</h2>
-          </header>
-          <div class="projects-grid">
-            <article class="project-card">
-              <div class="project-media">
-                <img src="images/tank-utility.png" alt="Tank Utility preview" loading="lazy">
-              </div>
-              <div class="project-copy">
-                <h3>homebridge-tank-utility</h3>
-                <p>Open-source HomeKit integration plugin for Tank Utility monitoring devices.</p>
-                <p class="project-links">
-                  <a href="https://github.com/pauloruberto/homebridge-tank-utility">GitHub</a>
-                  ·
-                  <a href="https://www.npmjs.com/package/homebridge-tank-utility">npm</a>
-                </p>
-              </div>
-            </article>
-          </div>
+        <header class="section-header">
+          <h2 class="section-title">Projects</h2>
+        </header>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-media">
+              <img src="images/tank-utility.png" alt="Tank Utility preview" loading="lazy">
+            </div>
+            <div class="project-copy">
+              <h3>homebridge-tank-utility</h3>
+              <p>Open-source HomeKit integration plugin for Tank Utility monitoring devices.</p>
+              <p class="project-links">
+                <a href="https://github.com/pauloruberto/homebridge-tank-utility">GitHub</a>
+                ·
+                <a href="https://www.npmjs.com/package/homebridge-tank-utility">npm</a>
+              </p>
+            </div>
+          </article>
         </div>
       </section>
 
       <section id="about" class="section" aria-label="About Paulo Ruberto">
-        <div class="section-surface surface">
-          <header class="section-header">
-            <h2 class="section-title">About Me</h2>
-          </header>
-          <div class="about-layout">
+        <header class="section-header">
+          <h2 class="section-title">About Me</h2>
+        </header>
+        <div class="about-layout">
             <div class="about-copy">
               <p>
                 I am currently building on the HRX Compliance team at Gusto, focused on robust, maintainable software
@@ -108,7 +112,6 @@
               <img src="images/headshot.jpeg" alt="Portrait of Paulo Ruberto" loading="lazy">
             </figure>
           </div>
-        </div>
       </section>
     </main>
 
