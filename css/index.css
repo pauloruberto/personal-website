@@ -22,10 +22,10 @@
 
 .hero-intro {
   font-family: "Lora", serif;
-  font-size: clamp(1.45rem, 2.8vw, 1.95rem);
-  line-height: 1.5;
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  line-height: 1.7;
   color: var(--text);
-  max-width: 640px;
+  max-width: 560px;
 }
 
 .hero-intro strong {
@@ -190,7 +190,7 @@
   }
 
   .hero-intro {
-    font-size: clamp(1.3rem, 5.5vw, 1.6rem);
+    font-size: 1.05rem;
   }
 
   .work-icon {
