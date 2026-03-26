@@ -51,7 +51,7 @@ h1, h2, h3 {
 }
 
 .site-shell {
-  width: min(960px, 88vw);
+  width: min(1100px, 88vw);
   margin: 0 auto;
   padding: clamp(2rem, 4vw, 3rem) 0 clamp(4rem, 8vw, 6rem);
 }
