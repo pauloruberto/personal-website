@@ -62,7 +62,7 @@ h1, h2, h3 {
   align-items: flex-start;
   justify-content: space-between;
   gap: var(--space-5);
-  margin-bottom: clamp(5rem, 12vw, 9rem);
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
 }
 
 .site-id p {
