@@ -91,6 +91,9 @@
 
 .work-icon--gusto  { background: #E54D2E; }
 .work-icon--amazon { background: #232F3E; }
+.work-icon--aws    { background: #FF9900; color: #232F3E; }
+.work-icon--ibm    { background: #1F70C1; }
+.work-icon--uoft   { background: #002A5C; }
 
 .work-body {
   padding-top: 5px;
@@ -104,6 +107,11 @@
 
 .work-title strong {
   color: var(--text);
+}
+
+.work-subtitle {
+  color: var(--text-muted);
+  font-weight: 400;
 }
 
 .work-meta {
