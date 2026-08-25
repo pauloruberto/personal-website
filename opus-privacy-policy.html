@@ -123,6 +123,10 @@
       margin-top: 8px;
     }
 
+    strong {
+      font-weight: 500;
+    }
+
     a {
       color: var(--link);
       text-decoration-color: #b8b8b8;
@@ -184,118 +188,105 @@
     <header>
       <p class="site-label">Opus</p>
       <h1>Privacy Policy</h1>
-      <p class="subtitle">Effective July 19, 2026 · Developed by Paulo Ruberto</p>
+      <p class="subtitle">Last updated August 24, 2026 · Developed by Paulo Ruberto</p>
     </header>
 
     <article class="content">
       <section>
         <h2>Overview</h2>
         <p>
-          Opus helps you follow music artists and browse their releases. Opus
-          does not operate user accounts, a developer-operated backend,
-          advertising, or analytics. Most Opus data stays locally on your device.
+          Opus is designed to keep its app data on your device. Opus does not use
+          an analytics SDK, advertising SDK, tracking technology, analytics
+          backend, account system, or developer-operated telemetry service.
         </p>
       </section>
 
       <section>
-        <h2>Information stored on your device</h2>
+        <h2>Apple services</h2>
         <p>
-          Opus stores information needed to provide its features locally on your
-          device. This may include:
+          Opus uses Apple Music and related Apple services to show catalog
+          information and, when you authorize access, to provide personalized
+          suggestions, library actions, and full-song playback. Those services
+          are provided by Apple and are subject to
+          <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">
+            Apple’s privacy policy</a>.
+        </p>
+        <p>
+          Apple may provide the developer with aggregated App Store usage and
+          diagnostic information, including crash and performance information,
+          for users who enable <strong>Share With App Developers</strong> in iOS.
+          Apple controls that sharing setting and the reporting process. Opus
+          does not use this information to identify individual users.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data stored on your device</h2>
+        <p>
+          Opus stores followed artists, discovered releases, app settings,
+          release filters, and operational diagnostics on your device. The app
+          and widget share the data needed to present releases. Removing Opus
+          removes its app-managed local data according to iOS behavior.
+        </p>
+      </section>
+
+      <section>
+        <h2>Optional diagnostic sharing</h2>
+        <p>
+          You can choose <strong>Export Diagnostics</strong> in Opus Settings.
+          Before sharing, Opus shows what the export includes. The generated JSON
+          file may contain:
         </p>
         <ul>
-          <li>Artists you choose to follow</li>
-          <li>Release and album metadata retrieved for those artists</li>
-          <li>App settings, filters, and playback preferences</li>
-          <li>Apple Music and notification permission status</li>
-          <li>Cached artwork and related app data</li>
+          <li>
+            App, iOS, device-category, authorization, background-refresh,
+            cache-size, and local item-count context.
+          </li>
+          <li>Every user-facing Opus setting.</li>
+          <li>Your exact user-entered release-filter keywords.</li>
+          <li>Content-independent Opus operational log entries.</li>
+          <li>
+            MetricKit performance and diagnostic reports retained on your device.
+          </li>
         </ul>
         <p>
-          Paulo Ruberto does not operate a server that receives or stores this
-          Opus data.
+          The export is created only when you request it. Opus presents the
+          standard iOS share sheet without a preset recipient and does not upload
+          the file automatically. You decide whether to share it and which
+          destination receives it. Temporary exports are deleted by Opus after
+          the share sheet closes, and stale temporary exports are removed after
+          one day.
+        </p>
+        <p>
+          The diagnostic design excludes catalog identifiers, artist/album/track
+          names, searches, URLs, notification text, Core Data content, internal
+          read-state identifiers, import bookkeeping, reconciliation cursors,
+          onboarding/debug markers, and raw error descriptions.
+        </p>
+        <p>
+          If you choose to send a diagnostic export to the developer for support,
+          it is used only to investigate that request and is deleted when it is
+          no longer needed. A destination you select in the share sheet may apply
+          its own privacy practices.
         </p>
       </section>
 
       <section>
-        <h2>Apple Music and music-content services</h2>
+        <h2>Data collection and tracking</h2>
         <p>
-          Opus uses Apple Music, MusicKit, and Apple-operated public
-          music-content services to search for artists, retrieve release and
-          artwork information, provide previews or playback, and, if you choose,
-          add music to your Apple Music library.
-        </p>
-        <p>
-          When you use these features, search terms and the artist, album, or
-          track identifiers needed to provide the requested feature are sent
-          directly to Apple or its music-content services. Apple’s handling of
-          information is governed by the
-          <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">
-            Apple Privacy Policy
-          </a>.
-        </p>
-        <p>
-          If you grant Apple Music permission, Opus may access only the Apple
-          Music information needed for the feature you use, such as checking
-          whether a release is in your library or adding an item at your request.
-          Opus does not receive or store your Apple Account password.
+          Opus performs no automatic off-device transmission of custom analytics,
+          logs, settings, or MetricKit payloads to the developer. Opus does not
+          track you across apps or websites and does not request App Tracking
+          Transparency permission.
         </p>
       </section>
 
       <section>
-        <h2>Notifications</h2>
+        <h2>Changes</h2>
         <p>
-          With your permission, Opus may schedule local notifications on your
-          device about newly discovered releases. Notification permission is
-          optional and can be changed at any time in iOS Settings.
-        </p>
-        <p>
-          Opus does not send push notifications through a developer-operated
-          server.
-        </p>
-      </section>
-
-      <section>
-        <h2>Data sharing, advertising, and tracking</h2>
-        <p>
-          Opus does not sell, rent, or share your personal information with
-          advertisers, data brokers, or analytics providers. Opus does not use
-          advertising or cross-app tracking.
-        </p>
-        <p>
-          Information necessary for Apple Music and music-content requests is
-          sent to Apple as described above. Opus does not otherwise disclose
-          your locally stored app data to third parties.
-        </p>
-      </section>
-
-      <section>
-        <h2>Data retention and deletion</h2>
-        <p>
-          Opus retains local app data until you remove it. You can delete Opus
-          data using the app’s reset option in Settings, or by removing the app
-          from your device. You can change Apple Music and notification
-          permissions at any time in iOS Settings.
-        </p>
-        <p>
-          Because Opus does not use a developer-operated account system or
-          server, there is no developer-held account data for us to retrieve or
-          delete.
-        </p>
-      </section>
-
-      <section>
-        <h2>Children’s privacy</h2>
-        <p>
-          Opus is not directed to children, and we do not knowingly collect
-          personal information from children.
-        </p>
-      </section>
-
-      <section>
-        <h2>Changes to this policy</h2>
-        <p>
-          This Privacy Policy may be updated if Opus’s data practices change. Any
-          update will be posted on this page with a revised effective date.
+          This policy will be updated before Opus adds any materially different
+          data collection, third-party analytics, cloud telemetry transport, or
+          automatic diagnostic upload.
         </p>
       </section>
 
