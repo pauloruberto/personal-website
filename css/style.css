@@ -1,7 +1,12 @@
 :root {
+  /* Let the browser theme native UI (scrollbars, form controls, canvas)
+     to match, instead of leaving a white gutter in dark mode. */
+  color-scheme: light dark;
+
   --bg: #ffffff;
+  --surface: #f3f3f3;
   --text: #0f0f0f;
-  --text-muted: #888888;
+  --text-muted: #6f6f6f;
   --line: #e8e8e8;
   --space-1: 0.5rem;
   --space-2: 0.75rem;
@@ -11,6 +16,18 @@
   --space-6: 3rem;
   --space-7: 4rem;
   --space-8: 6rem;
+}
+
+/* Follows the OS setting: macOS Appearance (including Auto at sunset)
+   and iOS Display & Brightness. No JS, so there is no flash on load. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101012;
+    --surface: #1a1a1d;
+    --text: #ededed;
+    --text-muted: #9a9a9a;
+    --line: #2a2a2e;
+  }
 }
 
 * {
