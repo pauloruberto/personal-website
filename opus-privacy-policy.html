@@ -208,16 +208,19 @@
     <header>
       <p class="site-label">Opus</p>
       <h1>Privacy Policy</h1>
-      <p class="subtitle">Last updated August 24, 2026 · Developed by Paulo Ruberto</p>
+      <p class="subtitle">Last updated September 22, 2026 · Developed by Paulo Ruberto</p>
     </header>
 
     <article class="content">
       <section>
         <h2>Overview</h2>
         <p>
-          Opus is designed to keep its app data on your device. Opus does not use
-          an analytics SDK, advertising SDK, tracking technology, analytics
-          backend, account system, or developer-operated telemetry service.
+          Opus keeps its data on your device and, when you are signed in to
+          iCloud, in a private database in your own iCloud account. Opus does
+          not use an analytics SDK, advertising SDK, tracking technology,
+          analytics backend, account system, or developer-operated server. The
+          developer cannot see your followed artists, settings, or listening
+          activity.
         </p>
       </section>
 
@@ -232,6 +235,12 @@
             Apple’s privacy policy</a>.
         </p>
         <p>
+          Without Apple Music access, Opus uses Apple’s public iTunes Search and
+          Apple Music feed services for artist search, releases, and
+          recommendations. Those requests, including the artist names you search
+          for, go directly to Apple.
+        </p>
+        <p>
           Apple may provide the developer with aggregated App Store usage and
           diagnostic information, including crash and performance information,
           for users who enable <strong>Share With App Developers</strong> in iOS.
@@ -243,11 +252,62 @@
       <section>
         <h2>Data stored on your device</h2>
         <p>
-          Opus stores followed artists, discovered releases, app settings,
-          release filters, and operational diagnostics on your device. The app
-          and widget share the data needed to present releases. Removing Opus
-          removes its app-managed local data according to iOS behavior.
+          Opus stores followed artists, discovered releases, which releases and
+          tracks you have viewed, app settings, release filters, and operational
+          diagnostics on your device. The app and widget share the data needed
+          to present releases. Deleting Opus removes this data from your device.
+          Anything synced to iCloud remains until you delete it, as described
+          below.
         </p>
+      </section>
+
+      <section>
+        <h2>iCloud sync</h2>
+        <p>
+          When you are signed in to iCloud, Opus syncs the following to a private
+          database in your iCloud account, so your devices stay in step and
+          reinstalling Opus can restore them:
+        </p>
+        <ul>
+          <li>
+            Followed artists: their Apple Music ID, name, artwork and Apple Music
+            links, and genres.
+          </li>
+          <li>Your Opus settings, including release filters and filter keywords.</li>
+          <li>Which releases and tracks you have viewed, stored as Apple Music IDs.</li>
+        </ul>
+        <p>
+          Discovered releases are not synced; each device downloads them from
+          Apple. Your iCloud data is stored by Apple under your Apple Account and
+          is subject to
+          <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">
+            Apple’s privacy policy</a>. The developer cannot access it.
+        </p>
+      </section>
+
+      <section>
+        <h2>Your choices and deleting data</h2>
+        <ul>
+          <li>
+            You can withdraw Apple Music or notification access at any time in
+            iOS Settings under Opus.
+          </li>
+          <li>
+            <strong>Erase All Content</strong> in Opus Settings removes your
+            followed artists and discovered releases from this device, and
+            removes your followed artists from iCloud and your other devices.
+          </li>
+          <li>
+            To delete everything Opus keeps in iCloud, open iOS Settings, tap your
+            name, then iCloud, and manage your account storage: choose Opus and
+            delete its data.
+          </li>
+          <li>
+            Diagnostic exports you send to the developer are deleted once your
+            request is resolved. You can ask for earlier deletion using the
+            contact details below.
+          </li>
+        </ul>
       </section>
 
       <section>
@@ -295,7 +355,9 @@
         <h2>Data collection and tracking</h2>
         <p>
           Opus performs no automatic off-device transmission of custom analytics,
-          logs, settings, or MetricKit payloads to the developer. Opus does not
+          logs, settings, or MetricKit payloads to the developer. Data synced
+          through iCloud goes to your own iCloud account, not to the developer.
+          Opus does not
           track you across apps or websites and does not request App Tracking
           Transparency permission.
         </p>
