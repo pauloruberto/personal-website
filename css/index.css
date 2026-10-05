@@ -155,6 +155,20 @@
   display: block;
 }
 
+/* Stand-in for a screenshot: the project name set large on the tile. */
+.project-thumb-wordmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-thumb-wordmark span {
+  font-family: "Lora", Georgia, serif;
+  font-size: clamp(2.5rem, 7vw, 3.5rem);
+  letter-spacing: -0.04em;
+  color: var(--text);
+}
+
 .project-info {
   margin-top: var(--space-3);
 }
